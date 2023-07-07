@@ -1,0 +1,83 @@
+html {
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+
+.img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
+.transparent,
+.button {
+  cursor: pointer;
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: rem(16);
+  line-height: 24px;
+  padding: 12px 32px;
+  min-height: 45px;
+  border-radius: 24px;
+  transition: all 0.4s ease 0s;
+  outline: none;
+
+  @media (max-width: $xsm) {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 8px 22px;
+  }
+}
+
+.transparent {
+  border: 1px solid $color-00;
+  color: $color-00;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color-white;
+    background-color: $color-34;
+  }
+}
+
+.button {
+  background-color: $color-00;
+  color: $color-white;
+  height: 2vmin;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $color-34;
+  }
+}
+
+.blur {
+  .wrapper {
+    filter: blur(10px);
+  }
+}
+
+.prevent-scroll {
+  height: 100% !important;
+  overflow: hidden !important;
+  touch-action: none;
+  width: 100%;
+  position: fixed;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.underline {
+  text-decoration: underline !important;
+}

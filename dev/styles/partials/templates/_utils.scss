@@ -1,0 +1,26 @@
+#form-1,
+#form-2 {
+  display: none;
+}
+
+#info-success,
+#info-existed,
+#info-error {
+  display: none;
+}
+
+.button-disabled {
+  background-color: #F8F7F3;
+  color: $color-34;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: #F8F7F3;
+    color: $color-34;
+  }
+}
+
+.active {
+  display: block !important;
+}

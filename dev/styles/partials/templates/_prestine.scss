@@ -1,0 +1,15 @@
+.has-success .form-control {
+  border: 1px solid $color-16;
+}
+
+.has-danger .form-control {
+  border: 1px solid $color-EB;
+}
+
+.form-group .text-help {
+  font-size: rem(14);
+  line-height: 18px;
+  color: $color-EB;
+  margin-bottom: rem(20);
+  margin-top: rem(10);
+}

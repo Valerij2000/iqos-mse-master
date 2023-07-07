@@ -1,0 +1,124 @@
+.fieldset__wrapp {
+  margin-bottom: rem(20);
+}
+
+.fieldset__select {
+  margin-bottom: 3vmin;
+
+  @media (max-width: $sm) {
+    margin-bottom: 5vmin;
+  }
+}
+
+.fieldset__device {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 5px;
+}
+
+.fieldset__radio {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 0 6px;
+  margin: 10px 0 0;
+}
+
+.fieldset__ico {
+  position: absolute;
+  top: 0px;
+  width: 40px;
+  height: 40px;
+}
+
+.fieldset__input[type='radio'] {
+  display: none;
+}
+
+.fieldset__input {
+  display: block;
+  height: 50px;
+  width: 100%;
+  font-family: 'IQOS-Regular';
+  font-size: rem(14);
+  line-height: 26px;
+  color: $color-84;
+  border: 0.5px solid $color-D6;
+  padding-left: rem(15);
+  outline: none;
+  margin-bottom: rem(20);
+}
+
+.fieldset__bold {
+  font-family: 'IQOS-Bold';
+}
+
+.fieldset__name {
+  color: $mainColor;
+  font-size: rem(14);
+  line-height: math.div(20, 16);
+  margin-bottom: rem(20);
+}
+
+.fieldset__text {
+  padding-left: rem(50);
+}
+
+.fieldset__name:before {
+  content: " ";
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  margin: 0 2vmin 0 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50px;
+  border: 1px solid $mainColor;
+  background-color: transparent;
+}
+
+.fieldset__input[type=radio]:checked+label:after {
+  border-radius: 11px;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 11px;
+  left: 12px;
+  content: " ";
+  display: block;
+  background: $mainColor;
+}
+
+.fieldset__accepted {
+  display: flex;
+  gap: rem(5);
+  margin-bottom: rem(20);
+}
+
+.fieldset__checkbox {
+  position: relative;
+  top: rem(2);
+  width: 14px;
+  height: 14px;
+  margin-bottom: rem(10);
+}
+
+.fieldset__label {
+  font-size: rem(12);
+  line-height: 21px;
+}
+
+.fieldset__accepted-text {
+  color: $color-00;
+}
+
+.fieldset__group-buttons {
+  display: flex;
+  gap: rem(12);
+  margin-bottom: rem(36);
+}
+
+.fieldset__request-code {
+  font-size: rem(12);
+  line-height: 20px;
+}
