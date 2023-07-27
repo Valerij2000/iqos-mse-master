@@ -74,7 +74,7 @@ form1.addEventListener('submit', async function (e) {
     const formData = new FormData();
     const dataRaw = {};
     const unicode = radios.device + radios.service;
-    const msecode = selectValueMask + inputMse.value;
+    const msecode = selectValueMask + inputMse.value + '!';
     disabledButton('button-request', true);
     pristineten1.fields.forEach(el => {
       let inputNameField = el.input.name;
